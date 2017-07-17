@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/javascripts/index.js" type="text/javascript" onload="getChatMessages('<%= videoId %>')"></script>
+
+    <title>YouVideos</title>
+  </head>  
+  <body>
+    <div style="width: 700px;float: left;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= videoId %>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <span style="color: green;font-weight: bold;" id="msgs-per-sec"></span>
+    <div style="height: 600px; overflow-y: scroll;">
+        <ul style="list-style: none;" id="chat-list">
+        </ul>
+    </div>
+  </body>
+</html>

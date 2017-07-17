@@ -1,0 +1,22 @@
+
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>YouVideos</title>
+  </head>  
+  <body>
+      Messages of user: <%= messages[0].name %>
+    <table>
+        <thead>
+            <td> Video Id</td>
+            <td> Message </td>
+        </thead>
+        <% for(var i=0; i < messages.length; i++) { %>
+        <tr>
+            <td><%= messages[i].videoId %></td>
+            <td><%= messages[i].message %></td>
+        </tr>
+        <% } %>
+    </table>
+  </body>
+</html>
