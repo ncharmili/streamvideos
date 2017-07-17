@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql')
-
+//mysql://b5364bb2086ed4:b504aec2@us-cdbr-iron-east-03.cleardb.net/heroku_f032e1fe1999706?reconnect=true
 var connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'root',
-  database: 'streamvideos',
+  host: 'us-cdbr-iron-east-03.cleardb.net',
+  user: 'b5364bb2086ed4',
+  password: 'b504aec2',
+  database: 'heroku_f032e1fe1999706',
   charset: 'utf8mb4'
 })
 
